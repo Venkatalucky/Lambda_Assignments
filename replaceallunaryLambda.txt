@@ -1,0 +1,23 @@
+package Lambda_Assignmanets;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.function.UnaryOperator;
+
+public class Replaceallunary {
+	public static void main(String[] args) throws CloneNotSupportedException
+	{
+		ArrayList<String> words = new ArrayList<>(Arrays.asList("samantha","nainathara","anjali","thrisha","anupama"));
+		System.out.println(words);
+		words.replaceAll(new MyOperator());
+		System.out.println(words);
+}
+}
+class MyOperator implements UnaryOperator<String>
+{
+
+	@Override
+	public String apply(String t) {
+		// TODO Auto-generated method stub
+		return t.toUpperCase(); 
+	}
+}
