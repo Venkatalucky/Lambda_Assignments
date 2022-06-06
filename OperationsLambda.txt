@@ -1,0 +1,28 @@
+package Lambda_Assignmanets;
+
+
+
+interface Airthmetic
+{
+	int operation(int a,int b);
+}
+public class Operations 
+{
+	public static void main(String[] args) 
+	{
+		Airthmetic add= (int a,int b)->(a+b);
+			System.out.println("addition : " +add.operation(42, 55) );
+		
+			Airthmetic sub= (int a,int b)->(a-b);
+			System.out.println("subtraction : " +sub.operation(234, 45) );
+		
+			Airthmetic mul= (int a,int b)->(a*b);
+			System.out.println("multiplication :" +mul.operation(5, 5) );
+		
+			Airthmetic div= (int a,int b)->(a/b);
+			System.out.println("division :" +div.operation(225, 5) );
+		
+	}
+	
+
+}
