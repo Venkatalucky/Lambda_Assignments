@@ -1,0 +1,16 @@
+package Lambda_Assignmanets;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Replacemethod 
+{
+	public static void main(String[] args) throws CloneNotSupportedException
+	{
+		ArrayList<String> words = new ArrayList<>(Arrays.asList("samantha","nainathara","anjali","thrisha","anupama"));
+		System.out.println(words);
+		words.replaceAll(e->e.toUpperCase());
+		System.out.println(words);
+    }
+
+}
